@@ -38,22 +38,18 @@ int main()
                      "b - command b\n"
                      "c - command c\n" );
          write(fd_s2c,buf,BUFSIZ);
-         break;
       } else if (strcmp("a",buf)==0) {
          sprintf(buf,"execute command a\n");
          printf("%s\n",buf);
          write(fd_s2c,buf,BUFSIZ);
-         break;
       } else if (strcmp("b",buf)==0) {
          sprintf(buf,"execute command b\n");
          printf("%s\n",buf);
          write(fd_s2c,buf,BUFSIZ);
-         break;
       } else if (strcmp("c",buf)==0) {
          sprintf(buf,"execute command c\n");
          printf("%s\n",buf);
          write(fd_s2c,buf,BUFSIZ);
-         break;
       } else if (strcmp("",buf)!=0) {
          printf("Received: %s\n", buf);
          printf("Sending back...\n");
